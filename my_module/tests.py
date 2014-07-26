@@ -4,7 +4,7 @@ from storage import Storage
 from models import Model
 
 class StorageTestCase(unittest.TestCase):
-  @patch('storage.Model')
+  @patch('my_module.storage.Model')
   def test(self, model_class_mock):
     save_mock = Mock(return_value='mocked')
     model_class_mock.return_value.save = save_mock
