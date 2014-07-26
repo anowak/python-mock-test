@@ -42,10 +42,10 @@ INSTALLED_APPS = (
 
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
-#NOSE_ARGS = [
-#  '--with-xunit', '--xunit-file=shippable/testresults/test.xml',
-#  '--with-coverage', '--cover-xml', '--cover-xml-file=shippable/codecoverage/coverage.xml',
-#]
+NOSE_ARGS = [
+  '--with-xunit', '--xunit-file=shippable/testresults/test.xml',
+  '--with-coverage', '--cover-xml', '--cover-xml-file=shippable/codecoverage/coverage.xml',
+]
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
