@@ -9,6 +9,7 @@ install:
 before_script: 
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
+  - mysql -e 'create database test;'
 
 script:
   - python manage.py test
