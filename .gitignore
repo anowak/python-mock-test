@@ -1,0 +1,4 @@
+shippable/
+.*.swp
+*.pyc
+ve/
