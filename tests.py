@@ -1,7 +1,7 @@
 import unittest
 from mock import patch, Mock
 from storage import Storage
-# from models import Model
+from models import Model
 
 class StorageTestCase(unittest.TestCase):
   @patch('storage.Model')
